@@ -1,0 +1,30 @@
+<%- include ('../partials/header') %>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form method="post">
+              <h2>Nova Série</h2>
+              <div class="form-group">
+                <label for="name">Editar Série</label>
+                <input value="<%= serie.name %>" type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Informe o Nome" required>
+                <small id="nameHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="status">Status da série:</label>
+                <select class="form-control" id="status" name="status">
+                <% labels.forEach( label => { %>
+                  
+                    <option value="<%= label.id %>" <% if(label.id === serie.status) { %> selected="selected" <% } %>>"<%= label.name %>"</option>
+                <% }) %>
+                </select>
+              </div>
+              <button class="btn btn-info"  >Salvar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<%- include ('../partials/footer') %>
