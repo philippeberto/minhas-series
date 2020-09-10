@@ -1,29 +1,37 @@
 <%- include ('../partials/header') %>
 
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <form method="post">
-              <h2>Nova Série</h2>
-              <div class="form-group">
-                <label for="name">Nome da Série</label>
-                <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Informe o Nome" required>
-                <small id="nameHelp" class="form-text text-muted"></small>
-              </div>
-              <div class="form-group">
-                <label for="status">Status da série:</label>
-                <select class="form-control" id="status" name="status">
-                  <option value="to-watch">Para assistir</option>
-                  <option value="watching">Assistindo</option>
-                  <option value="watched">Assistido</option>
-                </select>
-              </div>
-              <button class="btn btn-info"  >Salvar</button>
-            </form>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <form method="post">
+          <h2>Nova Série</h2>
+          <div class="form-group">
+            <label for="name">Nome da Série</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              aria-describedby="nameHelp"
+              placeholder="Informe o Nome"
+              required
+            />
+            <small id="nameHelp" class="form-text text-muted"></small>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="status">Status da série:</label>
+            <select class="form-control" id="status" name="status">
+              <option value="to-watch">Ver Mais Tarde</option>
+              <option value="watching">A Ver</option>
+              <option value="watched">Visto</option>
+            </select>
+          </div>
+          <button class="btn btn-info">Salvar</button>
+        </form>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 <%- include ('../partials/footer') %>
