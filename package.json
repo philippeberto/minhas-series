@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "dev_win": "set NODE_ENV=development && node ./bin/www >> /romba/log/api.log 2>> /romba/log/error.log",
-    "prod_win": "set NODE_ENV=production && node ./bin/www >> /romba/log/api.log 2>> /romba/log/error.log",
-    "prod_nix": "NODE_ENV=production node ./bin/www >> /romba/log/api.log 2>> /romba/log/_error.log"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Philippe Berto",
   "license": "ISC",
